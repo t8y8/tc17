@@ -38,7 +38,7 @@ with server.auth.sign_in(auth):
             with open(file_path, "wb") as image_file:
                 image_file.write(view.pdf)
 
-            print "\tPDF of {0} downloaded from {1} workbook".format(view.name, workbook.name)
+            print("\tPDF of {0} downloaded from {1} workbook".format(view.name, workbook.name))
 
 """
 Specifying PDF format (optional)
