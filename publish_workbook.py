@@ -42,6 +42,7 @@ def main():
     # Step 1: Sign in to server.
     tableau_auth = TSC.TableauAuth(args.username, password, site_id=args.site)
     server = TSC.Server(args.server)
+    server.use_server_version()
 
     with server.auth.sign_in(tableau_auth):
         # Step 2: Get projects on the site, then look for the default one.
